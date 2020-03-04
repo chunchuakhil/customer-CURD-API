@@ -1,0 +1,23 @@
+{
+  "name": "customer-hapiserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "start": "npm-run-all --parallel watch:build watch:server --print-label",
+    "watch:build": "tsc --watch",
+    "watch:server": "nodemon ./dist/index.js --watch ./dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^13.1.8",
+    "core-util-is": "^1.0.2",
+    "hapi": "^18.1.0",
+    "mongoose": "^5.8.10",
+    "nodemon": "latest",
+    "npm-run-all": "^4.1.5",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  }
+}
